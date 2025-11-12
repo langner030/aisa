@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /status/*
+Disallow: /api/*
+Disallow: /admin/*
+Sitemap: https://ai-search-analytics.com/sitemap.xml

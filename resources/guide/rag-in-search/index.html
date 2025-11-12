@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RAG in Site Search</title>
+<meta name="description" content="Architecture and pitfalls for Retrieval-Augmented Generation in search." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://ai-search-analytics.com/resources/guide/rag-in-search/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RAG in Site Search" />
+<meta property="og:description" content="Architecture and pitfalls for Retrieval-Augmented Generation in search." />
+<meta property="og:url" content="https://ai-search-analytics.com/resources/guide/rag-in-search/" />
+<meta property="og:image" content="/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="RAG in Site Search" />
+<meta name="twitter:description" content="Architecture and pitfalls for Retrieval-Augmented Generation in search." />
+<meta name="twitter:image" content="/og-default.png" />
+<link rel="alternate" hreflang="en" href="https://ai-search-analytics.com/resources/guide/rag-in-search" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/assets/styles.css" />
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","name":"RAG in Site Search","url":"https://ai-search-analytics.com/resources/guide/rag-in-search/"}]</script>
+</head>
+<body>
+<nav class="nav"><a class="logo" href="/">AI Search Analytics</a><ul><li><a href="/solutions">Solutions</a></li><li><a href="/product">Product</a></li><li><a href="/use-cases">Use Cases</a></li><li><a href="/industries">Industries</a></li><li><a class="active" href="/resources">Resources</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></nav>
+<main class="container">
+<div class="breadcrumbs"><a href="/">Home</a> / <a href="/resources">resources</a> / <a href="/resources/guide">guide</a> / <span>rag in search</span></div>
+<header class="page-header"><h1>RAG in Site Search</h1></header>
+<section class="prose"><section>
+    <h1>RAG in Site Search</h1>
+    <p>Retrieval-Augmented Generation (RAG) is transforming the landscape of internal site search, enhancing user experience and search accuracy. Understanding its architecture and potential pitfalls is crucial for product managers, search engineers, support leaders, and data analysts.</p>
+
+    <section>
+        <h2>Executive Summary</h2>
+        <ul>
+            <li>RAG combines retrieval and generation to improve search results.</li>
+            <li>It can significantly enhance user engagement and reduce zero-results occurrences.</li>
+            <li>Key performance indicators (KPIs) include CTR, NDCG, and MRR.</li>
+            <li>Implementation requires careful consideration of architecture and trade-offs.</li>
+            <li>Common pitfalls include over-reliance on generated content and inadequate evaluation metrics.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What it is</h2>
+        <p>Retrieval-Augmented Generation (RAG) is a hybrid approach in search technology that integrates traditional information retrieval with generative models. This method retrieves relevant documents from a knowledge base and utilizes them to generate contextually rich responses, thereby enhancing the quality of search results.</p>
+    </section>
+
+    <section>
+        <h2>Why it matters</h2>
+        <p>RAG is essential for businesses aiming to improve their internal site search capabilities. By leveraging RAG, organizations can:</p>
+        <ul>
+            <li>Enhance user satisfaction and engagement, leading to higher conversion rates.</li>
+            <li>Reduce the frequency of zero-results pages, which can frustrate users.</li>
+            <li>Improve key performance indicators (KPIs) such as Click-Through Rate (CTR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How it works</h2>
+        <p>The architecture of RAG consists of two main components:</p>
+        <ol>
+            <li><strong>Retrieval Component:</strong> This component retrieves relevant documents from a database or knowledge base based on the user's query.</li>
+            <li><strong>Generation Component:</strong> Using the retrieved documents, a generative model constructs a coherent and contextually relevant response.</li>
+        </ol>
+        <p>Key concepts include:</p>
+        <ul>
+            <li><strong>Vector Search:</strong> A method to find similar documents based on vector embeddings.</li>
+            <li><strong>Contextual Relevance:</strong> Ensuring that the generated content is directly related to the user's query.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Implementation steps</h2>
+        <ol>
+            <li>Define the scope and objectives of the RAG implementation.</li>
+            <li>Choose a suitable retrieval model (e.g., Elasticsearch, Pinecone) for vector search.</li>
+            <li>Integrate a generative model (e.g., GPT-3) with the retrieval system.</li>
+            <li>Develop a feedback loop to continuously improve the model based on user interactions.</li>
+            <li>Conduct thorough testing and validation to ensure accuracy and relevance.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Common pitfalls & trade-offs</h2>
+        <p>While RAG offers significant advantages, there are common pitfalls to be aware of:</p>
+        <ul>
+            <li><strong>Over-reliance on Generated Content:</strong> Relying too heavily on generative responses may lead to inaccuracies.</li>
+            <li><strong>Inadequate Evaluation Metrics:</strong> Failing to implement robust metrics can result in poor performance assessments.</li>
+            <li><strong>Complexity in Implementation:</strong> The integration of retrieval and generation components can be technically challenging.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Measurement</h2>
+        <p>To evaluate the effectiveness of RAG in site search, consider the following metrics:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Formula</th>
+                    <th>Benchmark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Click-Through Rate (CTR)</td>
+                    <td>(Clicks / Impressions) x 100</td>
+                    <td>Above 2% is generally considered good.</td>
+                </tr>
+                <tr>
+                    <td>Normalized Discounted Cumulative Gain (NDCG)</td>
+                    <td>DCG / IDCG</td>
+                    <td>Closer to 1 indicates better relevance.</td>
+                </tr>
+                <tr>
+                    <td>Mean Reciprocal Rank (MRR)</td>
+                    <td>(1 / Rank of first relevant result)</td>
+                    <td>Higher values indicate better ranking.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Mini case example</h2>
+        <p>A leading e-commerce platform implemented RAG to enhance its internal site search. By integrating a vector search model with a generative AI, they reduced zero-results occurrences by 30% and increased CTR by 15% over six months. This improvement directly contributed to higher sales conversions and user satisfaction.</p>
+    </section>
+
+    <section>
+        <h2>FAQ</h</section>
+</main>
+<footer class="footer"><div class="container">
+<p>© 2025 AI Search Analytics · <a href="/legal/privacy">Privacy</a> · <a href="/legal/terms">Terms</a> · <a href="/legal/imprint">Imprint</a></p>
+</div></footer>
+</body></html>
