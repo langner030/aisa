@@ -19,6 +19,15 @@
 <link rel="icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/assets/styles.css" />
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"FAQPage","name":"Query Intent","url":"https://ai-search-analytics.com/solutions/query-intent/"}]</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0V2JWEZXT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L0V2JWEZXT');
+</script>
 </head>
 <body>
 <nav class="nav"><a class="logo" href="/">AI Search Analytics</a><ul><li><a class="active" href="/solutions">Solutions</a></li><li><a href="/product">Product</a></li><li><a href="/use-cases">Use Cases</a></li><li><a href="/industries">Industries</a></li><li><a href="/resources">Resources</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></nav>
@@ -29,118 +38,6 @@
 <section><h2>Key Metrics</h2><ul class="kpis"><li><strong>CTR</strong></li><li><strong>Zero-results</strong></li><li><strong>Conversion rate</strong></li></ul></section>
 <section class="faq"><h2>FAQ</h2><details><summary>What models are used?</summary><div>Embeddings with supervised labels and heuristics.</div></details></section>
 <section class="cta"><a class="btn" href="/demo">Request a demo</a></section>
-<section class="prose"><section>
-    <h1>Query Intent</h1>
-    <p>Understanding query intent is crucial for effective intent detection and query understanding, enabling businesses to classify navigational, informational, and transactional intents. This classification boosts relevance and conversion rates.</p>
-    
-    <section>
-        <h2>Executive Summary</h2>
-        <ul>
-            <li>Query intent categorizes user searches into navigational, informational, and transactional types.</li>
-            <li>Effective intent detection improves user experience and increases conversion rates.</li>
-            <li>Key performance indicators (KPIs) include CTR, NDCG, and MRR.</li>
-            <li>Implementation involves understanding user behavior and refining search algorithms.</li>
-            <li>Common pitfalls include overfitting models and neglecting user context.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>What it is</h2>
-        <p>Query intent refers to the underlying purpose behind a user's search query. It is typically classified into three categories:</p>
-        <ul>
-            <li><strong>Navigational Intent:</strong> The user is looking for a specific website or page.</li>
-            <li><strong>Informational Intent:</strong> The user seeks information on a topic without a specific destination.</li>
-            <li><strong>Transactional Intent:</strong> The user intends to make a purchase or complete a transaction.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Why it matters</h2>
-        <p>Understanding query intent is essential for several reasons:</p>
-        <ul>
-            <li>Enhances user experience by providing relevant results.</li>
-            <li>Increases conversion rates by aligning search results with user expectations.</li>
-            <li>Reduces zero-results queries, improving overall search effectiveness.</li>
-        </ul>
-        <p>Key performance indicators (KPIs) to monitor include:</p>
-        <ul>
-            <li><strong>Click-Through Rate (CTR):</strong> Measures the effectiveness of search results.</li>
-            <li><strong>Normalized Discounted Cumulative Gain (NDCG):</strong> Evaluates ranking quality.</li>
-            <li><strong>Mean Reciprocal Rank (MRR):</strong> Assesses the average rank of the first relevant result.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>How it works</h2>
-        <p>The architecture of intent detection involves several key concepts:</p>
-        <ul>
-            <li><strong>Natural Language Processing (NLP):</strong> Analyzes user queries to determine intent.</li>
-            <li><strong>Machine Learning Models:</strong> Trained on historical data to classify intents.</li>
-            <li><strong>User Context:</strong> Incorporates user behavior and preferences into intent detection.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Implementation steps</h2>
-        <ol>
-            <li>Collect historical search query data.</li>
-            <li>Label data based on query intent categories.</li>
-            <li>Train machine learning models using the labeled dataset.</li>
-            <li>Integrate the model into the search engine architecture.</li>
-            <li>Monitor performance and refine the model based on user feedback.</li>
-        </ol>
-    </section>
-    
-    <section>
-        <h2>Common pitfalls & trade-offs</h2>
-        <p>While implementing query intent detection, be aware of the following challenges:</p>
-        <ul>
-            <li><strong>Overfitting:</strong> Models may become too specialized on training data, reducing generalizability.</li>
-            <li><strong>Ignoring User Context:</strong> Failing to consider user behavior may lead to misclassification of intent.</li>
-            <li><strong>Complexity of Queries:</strong> Ambiguous or multi-faceted queries can complicate intent detection.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Measurement</h2>
-        <p>To evaluate the effectiveness of intent detection, consider the following metrics:</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Metric</th>
-                    <th>Formula</th>
-                    <th>Benchmark</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>CTR</td>
-                    <td>(Clicks / Impressions) * 100</td>
-                    <td>Above 2% is generally considered good.</td>
-                </tr>
-                <tr>
-                    <td>NDCG</td>
-                    <td>DCG / IDCG</td>
-                    <td>Closer to 1 indicates better performance.</td>
-                </tr>
-                <tr>
-                    <td>MRR</td>
-                    <td>(1 / Rank of first relevant result)</td>
-                    <td>Higher values indicate better performance.</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    
-    <section>
-        <h2>Mini case example</h2>
-        <p>A retail website implemented intent detection to improve its internal site search. By categorizing queries, they identified that 60% of searches were informational. They adjusted their content strategy to provide more relevant information, resulting in a 25% increase in CTR and a 15% increase in sales conversions over six months.</p>
-    </section>
-    
-    <section>
-        <h2>FAQ</h2>
-        <ul>
-            <li</section>
 </main>
 <footer class="footer"><div class="container">
 <p>© 2025 AI Search Analytics · <a href="/legal/privacy">Privacy</a> · <a href="/legal/terms">Terms</a> · <a href="/legal/imprint">Imprint</a></p>
